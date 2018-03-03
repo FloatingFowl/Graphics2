@@ -177,6 +177,33 @@ src/boat.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/boat.cpp.s
 .PHONY : src/boat.cpp.s
 
+src/bomb.o: src/bomb.cpp.o
+
+.PHONY : src/bomb.o
+
+# target to build an object file
+src/bomb.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o
+.PHONY : src/bomb.cpp.o
+
+src/bomb.i: src/bomb.cpp.i
+
+.PHONY : src/bomb.i
+
+# target to preprocess a source file
+src/bomb.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.i
+.PHONY : src/bomb.cpp.i
+
+src/bomb.s: src/bomb.cpp.s
+
+.PHONY : src/bomb.s
+
+# target to generate assembly for a file
+src/bomb.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.s
+.PHONY : src/bomb.cpp.s
+
 src/color.o: src/color.cpp.o
 
 .PHONY : src/color.o
@@ -312,6 +339,33 @@ src/other_handlers.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.s
 .PHONY : src/other_handlers.cpp.s
 
+src/sea.o: src/sea.cpp.o
+
+.PHONY : src/sea.o
+
+# target to build an object file
+src/sea.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o
+.PHONY : src/sea.cpp.o
+
+src/sea.i: src/sea.cpp.i
+
+.PHONY : src/sea.i
+
+# target to preprocess a source file
+src/sea.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/sea.cpp.i
+.PHONY : src/sea.cpp.i
+
+src/sea.s: src/sea.cpp.s
+
+.PHONY : src/sea.s
+
+# target to generate assembly for a file
+src/sea.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/sea.cpp.s
+.PHONY : src/sea.cpp.s
+
 src/timer.o: src/timer.cpp.o
 
 .PHONY : src/timer.o
@@ -354,6 +408,9 @@ help:
 	@echo "... src/boat.o"
 	@echo "... src/boat.i"
 	@echo "... src/boat.s"
+	@echo "... src/bomb.o"
+	@echo "... src/bomb.i"
+	@echo "... src/bomb.s"
 	@echo "... src/color.o"
 	@echo "... src/color.i"
 	@echo "... src/color.s"
@@ -369,6 +426,9 @@ help:
 	@echo "... src/other_handlers.o"
 	@echo "... src/other_handlers.i"
 	@echo "... src/other_handlers.s"
+	@echo "... src/sea.o"
+	@echo "... src/sea.i"
+	@echo "... src/sea.s"
 	@echo "... src/timer.o"
 	@echo "... src/timer.i"
 	@echo "... src/timer.s"

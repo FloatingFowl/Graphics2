@@ -2,6 +2,9 @@
 #include "timer.h"
 #include "ball.h"
 #include "boat.h"
+#include "sea.h"
+#include "bomb.h"
+#include "rock.h"
 
 using namespace std;
 
@@ -13,7 +16,10 @@ GLFWwindow *window;
 * Customizable functions *
 **************************/
 
-Boat ball1;
+Boat boat;
+Sea sea;
+Bomb bomb;
+Rock rock;
 
 float screen_zoom = 1.0f, screen_center_x = 0, screen_center_y = 0;
 float camera_rotation_angle = 0;
@@ -31,7 +37,7 @@ void draw() {
     glUseProgram (programID);
 
     // Eye - Location of camera. Don't change unless you are sure!!
-    glm::vec3 eye ( 10*cos(camera_rotation_angle*M_PI/180.0f), 4, 10*sin(camera_rotation_angle*M_PI/180.0f) );
+    glm::vec3 eye ( 10*sin(camera_rotation_angle*M_PI/180.0f) - 4, 4, -9*cos(camera_rotation_angle*M_PI/180.0f) );
     // Target - Where is the camera looking at.  Don't change unless you are sure!!
     glm::vec3 target (0, 0, 0);
     // Up - Up vector defines tilt of camera.  Don't change unless you are sure!!
@@ -52,20 +58,40 @@ void draw() {
     glm::mat4 MVP;  // MVP = Projection * View * Model
 
     // Scene render
-    ball1.draw(VP);
+    sea.draw(VP);
+    //boat.draw(VP);
+    bomb.draw(VP);
 }
 
 void tick_input(GLFWwindow *window) {
     int left  = glfwGetKey(window, GLFW_KEY_LEFT);
     int right = glfwGetKey(window, GLFW_KEY_RIGHT);
+    int up = glfwGetKey(window, GLFW_KEY_UP);
+    int space = glfwGetKey(window, GLFW_KEY_SPACE);
+    int f = glfwGetKey(window, GLFW_KEY_F);
+    if (up) {
+        boat.motor_speed = 2.0f;
+    }
+    if (right) {
+        boat.rotation -= 1.0f;
+    }
     if (left) {
-        // Do something
+        boat.rotation += 1.0f;
+    }
+    if (f && !bomb.shot) {
+        bomb.start(boat.position.x, boat.position.z, boat.rotation);
+    }
+    if (space && !boat.jump) {
+        boat.jump = true;
+        boat.yspeed = 5.0f;
     }
 }
 
 void tick_elements() {
-    //ball1.tick();
-    camera_rotation_angle += 1;
+    boat.tick();
+    sea.tick();
+    bomb.tick();
+    //camera_rotation_angle += 1;
 }
 
 /* Initialize the OpenGL rendering properties */
@@ -74,7 +100,10 @@ void initGL(GLFWwindow *window, int width, int height) {
     /* Objects should be created before any other gl function and shaders */
     // Create the models
 
-    ball1 = Boat(COLOR_RED, COLOR_BROWN);
+    boat = Boat(COLOR_RED, COLOR_BROWN, COLOR_SILVER, COLOR_RED, COLOR_ARMYGREEN, COLOR_BLACK);
+    sea = Sea(COLOR_SEABLUE);
+    bomb = Bomb(COLOR_FIRE1, COLOR_FIRE2, COLOR_FIRE3);
+    rock = Rock();
 
     // Create and compile our GLSL program from the shaders
     programID = LoadShaders("Sample_GL.vert", "Sample_GL.frag");

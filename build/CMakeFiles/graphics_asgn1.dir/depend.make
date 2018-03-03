@@ -13,6 +13,12 @@ CMakeFiles/graphics_asgn1.dir/src/boat.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/boat.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
 CMakeFiles/graphics_asgn1.dir/src/boat.cpp.o: /usr/local/Cellar/glfw/3.2.1/include/GLFW/glfw3.h
 
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o: ../src/bomb.cpp
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o: ../src/bomb.h
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
+CMakeFiles/graphics_asgn1.dir/src/bomb.cpp.o: /usr/local/Cellar/glfw/3.2.1/include/GLFW/glfw3.h
+
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/color.cpp
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/color.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
@@ -25,8 +31,10 @@ CMakeFiles/graphics_asgn1.dir/src/input.cpp.o: /usr/local/Cellar/glfw/3.2.1/incl
 
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/ball.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/boat.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/bomb.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/sea.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/timer.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: /usr/local/Cellar/glfw/3.2.1/include/GLFW/glfw3.h
@@ -40,6 +48,12 @@ CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: ../src/other_handlers.cpp
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: /usr/local/Cellar/glfw/3.2.1/include/GLFW/glfw3.h
+
+CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: ../src/sea.cpp
+CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: ../src/sea.h
+CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
+CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: /usr/local/Cellar/glfw/3.2.1/include/GLFW/glfw3.h
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.cpp
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.h
