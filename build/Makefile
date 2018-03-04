@@ -339,6 +339,33 @@ src/other_handlers.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.s
 .PHONY : src/other_handlers.cpp.s
 
+src/rock.o: src/rock.cpp.o
+
+.PHONY : src/rock.o
+
+# target to build an object file
+src/rock.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o
+.PHONY : src/rock.cpp.o
+
+src/rock.i: src/rock.cpp.i
+
+.PHONY : src/rock.i
+
+# target to preprocess a source file
+src/rock.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/rock.cpp.i
+.PHONY : src/rock.cpp.i
+
+src/rock.s: src/rock.cpp.s
+
+.PHONY : src/rock.s
+
+# target to generate assembly for a file
+src/rock.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/rock.cpp.s
+.PHONY : src/rock.cpp.s
+
 src/sea.o: src/sea.cpp.o
 
 .PHONY : src/sea.o
@@ -365,6 +392,33 @@ src/sea.s: src/sea.cpp.s
 src/sea.cpp.s:
 	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/sea.cpp.s
 .PHONY : src/sea.cpp.s
+
+src/spammon.o: src/spammon.cpp.o
+
+.PHONY : src/spammon.o
+
+# target to build an object file
+src/spammon.cpp.o:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o
+.PHONY : src/spammon.cpp.o
+
+src/spammon.i: src/spammon.cpp.i
+
+.PHONY : src/spammon.i
+
+# target to preprocess a source file
+src/spammon.cpp.i:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.i
+.PHONY : src/spammon.cpp.i
+
+src/spammon.s: src/spammon.cpp.s
+
+.PHONY : src/spammon.s
+
+# target to generate assembly for a file
+src/spammon.cpp.s:
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.s
+.PHONY : src/spammon.cpp.s
 
 src/timer.o: src/timer.cpp.o
 
@@ -426,9 +480,15 @@ help:
 	@echo "... src/other_handlers.o"
 	@echo "... src/other_handlers.i"
 	@echo "... src/other_handlers.s"
+	@echo "... src/rock.o"
+	@echo "... src/rock.i"
+	@echo "... src/rock.s"
 	@echo "... src/sea.o"
 	@echo "... src/sea.i"
 	@echo "... src/sea.s"
+	@echo "... src/spammon.o"
+	@echo "... src/spammon.i"
+	@echo "... src/spammon.s"
 	@echo "... src/timer.o"
 	@echo "... src/timer.i"
 	@echo "... src/timer.s"

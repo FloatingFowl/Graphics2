@@ -34,7 +34,9 @@ CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/boat.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/bomb.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/rock.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/sea.h
+CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/spammon.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: ../src/timer.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
 CMakeFiles/graphics_asgn1.dir/src/main.cpp.o: /usr/local/Cellar/glfw/3.2.1/include/GLFW/glfw3.h
@@ -49,11 +51,23 @@ CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: ../src/other_handlers.cp
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o: /usr/local/Cellar/glfw/3.2.1/include/GLFW/glfw3.h
 
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o: ../src/rock.cpp
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o: ../src/rock.h
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o: /usr/local/Cellar/glfw/3.2.1/include/GLFW/glfw3.h
+
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: ../src/main.h
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: ../src/sea.cpp
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: ../src/sea.h
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: /usr/local/Cellar/glfw/3.2.1/include/GLFW/glfw3.h
+
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o: ../src/main.h
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o: ../src/spammon.cpp
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o: ../src/spammon.h
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o: /usr/local/Cellar/glew/2.1.0/include/GL/glew.h
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o: /usr/local/Cellar/glfw/3.2.1/include/GLFW/glfw3.h
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.cpp
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.h

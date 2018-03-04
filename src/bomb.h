@@ -15,7 +15,7 @@ public:
     bool shot;
     void draw(glm::mat4 VP);
     void tick();
-    void start(float x=0.0f, float y=0.0f, float rot=0.0f);
+    void start(float x=0.0f, float y=0.0f, float z=0.0f, float rot=0.0f);
 private:
     VAO *cbd1;
     VAO *cbd2;

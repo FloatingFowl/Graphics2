@@ -12,6 +12,8 @@ public:
     float rotation;
     float motor_speed;
     float yspeed;
+    float windspeed;
+    float reactionspeed;
     bool jump;
     void draw(glm::mat4 VP);
     void tick();

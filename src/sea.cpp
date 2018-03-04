@@ -30,7 +30,17 @@ Sea::Sea(color_t colorsea) {
         -500.0f,0.0f,-500.0f, 
     };
 
-    this->sea = create3DObject(GL_TRIANGLES, (2)*3, sea_data, colorsea, GL_FILL);
+    GLfloat sea_color[] = {
+        0,0.749,1,
+        0.254,0.411,1,
+        0.254,0.411,1,
+        0.254,0.411,1,
+        0.254,0.411,1,
+        0,0.749,1,
+    };
+
+    //this->sea = create3DObject(GL_TRIANGLES, (2)*3, sea_data, colorsea, GL_FILL);
+    this->sea = create3DObject(GL_TRIANGLES, (2)*3, sea_data, sea_color, GL_FILL);
 }
 
 void Sea::tick() {

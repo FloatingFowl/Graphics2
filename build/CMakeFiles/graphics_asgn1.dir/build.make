@@ -249,9 +249,33 @@ CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o.provides: CMakeFiles/grap
 CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o
 
 
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o: ../src/rock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Mohsin/Repos/Graphics2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o -c /Users/Mohsin/Repos/Graphics2/src/rock.cpp
+
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/rock.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Mohsin/Repos/Graphics2/src/rock.cpp > CMakeFiles/graphics_asgn1.dir/src/rock.cpp.i
+
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/rock.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Mohsin/Repos/Graphics2/src/rock.cpp -o CMakeFiles/graphics_asgn1.dir/src/rock.cpp.s
+
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o.requires:
+
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o.requires
+
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o.provides: CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o.requires
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o.provides.build
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o.provides
+
+CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o
+
+
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o: ../src/sea.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Mohsin/Repos/Graphics2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Mohsin/Repos/Graphics2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o -c /Users/Mohsin/Repos/Graphics2/src/sea.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.i: cmake_force
@@ -273,9 +297,33 @@ CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o.provides: CMakeFiles/graphics_asgn1.
 CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o
 
 
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o: ../src/spammon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Mohsin/Repos/Graphics2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o -c /Users/Mohsin/Repos/Graphics2/src/spammon.cpp
+
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Mohsin/Repos/Graphics2/src/spammon.cpp > CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.i
+
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Mohsin/Repos/Graphics2/src/spammon.cpp -o CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.s
+
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o.requires:
+
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o.requires
+
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o.provides: CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o.requires
+	$(MAKE) -f CMakeFiles/graphics_asgn1.dir/build.make CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o.provides.build
+.PHONY : CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o.provides
+
+CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o.provides.build: CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o
+
+
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: CMakeFiles/graphics_asgn1.dir/flags.make
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o: ../src/timer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Mohsin/Repos/Graphics2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Mohsin/Repos/Graphics2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o -c /Users/Mohsin/Repos/Graphics2/src/timer.cpp
 
 CMakeFiles/graphics_asgn1.dir/src/timer.cpp.i: cmake_force
@@ -307,7 +355,9 @@ graphics_asgn1_OBJECTS = \
 "CMakeFiles/graphics_asgn1.dir/src/main.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o" \
+"CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o" \
+"CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o" \
 "CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o"
 
 # External object files for target graphics_asgn1
@@ -321,11 +371,13 @@ graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/input.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/main.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o
+graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o
+graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/build.make
 graphics_asgn1: CMakeFiles/graphics_asgn1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Mohsin/Repos/Graphics2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable graphics_asgn1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Mohsin/Repos/Graphics2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable graphics_asgn1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graphics_asgn1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -341,7 +393,9 @@ CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/input.
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/main.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/nonedit.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/other_handlers.cpp.o.requires
+CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/rock.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/sea.cpp.o.requires
+CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/spammon.cpp.o.requires
 CMakeFiles/graphics_asgn1.dir/requires: CMakeFiles/graphics_asgn1.dir/src/timer.cpp.o.requires
 
 .PHONY : CMakeFiles/graphics_asgn1.dir/requires

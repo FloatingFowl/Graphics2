@@ -5,6 +5,7 @@
 #include <cmath>
 #include <fstream>
 #include <vector>
+#include <ctime>
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
@@ -38,6 +39,8 @@ void scroll_callback(GLFWwindow *window, double xoffset, double yoffset);
 void error_callback(int error, const char *description);
 void quit(GLFWwindow *window);
 void reshapeWindow(GLFWwindow *window, int width, int height);
+
+// collisions.cpp
 
 // Types
 struct VAO {
@@ -75,6 +78,10 @@ bool detect_collision(bounding_box_t a, bounding_box_t b);
 
 extern float screen_zoom, screen_center_x, screen_center_y;
 void reset_screen();
+void camera_func();
+bool ccBoxBox(float ax, float ay, float az, float ahx, float ahy, float ahz, 
+        float bx, float by, float bz, float bhx, float bhy, float bhz);
+float ccPolyPoly(std::vector<std::pair<float,float> >& a, std::vector<std::pair<float,float> >& b);
 
 // ---- Colors ----
 extern const color_t COLOR_RED;
@@ -85,6 +92,8 @@ extern const color_t COLOR_BROWN;
 extern const color_t COLOR_SILVER;
 extern const color_t COLOR_ARMYGREEN;
 extern const color_t COLOR_SEABLUE;
+extern const color_t COLOR_ROCKGRAY;
+extern const color_t COLOR_WHITE;
 extern const color_t COLOR_FIRE1;
 extern const color_t COLOR_FIRE2;
 extern const color_t COLOR_FIRE3;

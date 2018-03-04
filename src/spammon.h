@@ -1,17 +1,16 @@
 #include "main.h"
 
-#ifndef ROCK_H
-#define ROCK_H
+#ifndef SPAMMON_H
+#define SPAMMON_H
 
-
-class Rock {
+class Spammon {
 public:
-    Rock() {}
-    Rock(float x, float y);
+    Spammon(){};
+    Spammon(float x, float y, color_t color);
     glm::vec3 position;
     float rotation;
+    bool dead;
     void draw(glm::mat4 VP);
-    void tick();
 private:
     VAO *rock;
 };
