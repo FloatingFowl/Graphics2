@@ -13,28 +13,43 @@ void Boat::draw(glm::mat4 VP) {
     draw3DObject(this->base);
     draw3DObject(this->side);
     draw3DObject(this->pole);
-    draw3DObject(this->canon);
     draw3DObject(this->cover);
     //
-    Matrices.model = glm::mat4(1.0f);
-    translate = glm::translate (this->position);    // glTranslatef
-    float extra = 0.0;
-    if (windspeed > 0){
-        extra = -45.0;
+    {
+        Matrices.model = glm::mat4(1.0f);
+        translate = glm::translate (this->position);    // glTranslatef
+        if(windspeedz > 0.25)
+            rotate = glm::rotate((float) (180 * M_PI / 180.0f), glm::vec3(0, 1, 0));
+        else if(windspeedz < -0.25)
+            rotate = glm::rotate((float) (0 * M_PI / 180.0f), glm::vec3(0, 1, 0));
+        else if (windspeedx > 0.25)
+            rotate = glm::rotate((float) ((-90) * M_PI / 180.0f), glm::vec3(0, 1, 0));
+        else if (windspeedx < -0.25)
+            rotate = glm::rotate((float) ((90) * M_PI / 180.0f), glm::vec3(0, 1, 0));
+        else
+            rotate = glm::rotate((float) ((this->rotation) * M_PI / 180.0f), glm::vec3(0, 1, 0));
+        Matrices.model *= (translate * rotate);
+        MVP = VP * Matrices.model;
+        glUniformMatrix4fv(Matrices.MatrixID, 1, GL_FALSE, &MVP[0][0]);
+        draw3DObject(this->sail);
     }
-    else if(windspeed < 0){
-        extra = 45.0;
+    {
+        Matrices.model = glm::mat4(1.0f);
+        translate = glm::translate (this->position);    // glTranslatef
+        glm::mat4 translate2 = glm::translate (glm::vec3(0,0,-4.0f));    // glTranslatef
+        glm::mat4 opptranslate2 = glm::translate (glm::vec3(0,0,4.0f));
+        glm::mat4 rotate2 = glm::rotate((float) ((crot) * M_PI / 180.0f), glm::vec3(0, 1, 0));
+        rotate = glm::rotate((float) ((this->rotation) * M_PI / 180.0f), glm::vec3(0, 1, 0));
+        Matrices.model *= (translate * rotate * opptranslate2 * rotate2 * translate2);
+        MVP = VP * Matrices.model;
+        glUniformMatrix4fv(Matrices.MatrixID, 1, GL_FALSE, &MVP[0][0]);
+        draw3DObject(this->canon);
     }
-    rotate = glm::rotate((float) ((this->rotation + extra) * M_PI / 180.0f), glm::vec3(0, 1, 0));
-    Matrices.model *= (translate * rotate);
-    MVP = VP * Matrices.model;
-    glUniformMatrix4fv(Matrices.MatrixID, 1, GL_FALSE, &MVP[0][0]);
-    draw3DObject(this->sail);
 }
 
 void Boat::tick() {
     //wind
-    float dist_covered = windspeed * (1/60.0);
+    float dist_covered = windspeedx * (1/60.0);
     //reaction
     float friction = 1.0f;
     reactionspeed = reactionspeed - (friction) * (1/60.0);
@@ -44,12 +59,16 @@ void Boat::tick() {
         position.x -= sin(this->rotation * M_PI / 180.0f) * dist_covered;
     }
     else reactionspeed = 0;
-    //position.z += -sin(this->rotation * M_PI / 180.0f) * windspeed;
-    //position.x += cos(this->rotation * M_PI / 180.0f) * windspeed;
+    //wind
+    if(std::abs(windspeedz) >= 0.25)
+        position.z += windspeedz/4;
+    else if(std::abs(windspeedx) <= 0.25)
+        position.x += windspeedx/4;
     //horizontal
     friction = 1.0f;
     float new_speed = motor_speed - friction * (1/60.0);
     dist_covered = (motor_speed) * (1/60.0) - (1/7200.0) * friction;
+    dist_covered *= booster;
     if (dist_covered < 0){
         motor_speed = 0;
     }
@@ -72,7 +91,11 @@ void Boat::tick() {
 }
 
 Boat::Boat(color_t colorbase, color_t colorside, color_t colorpole, color_t colorsail, color_t colorcover, color_t colorcanon) {
-    windspeed = 0;
+    crot = 0;
+    life = 3;
+    points = 0;
+    booster = 1.0f;
+    windspeedx = windspeedz = 0;
     reactionspeed = 0;
     position = glm::vec3(0, 0, 0);
     rotation = 0;

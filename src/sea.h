@@ -15,6 +15,7 @@ public:
     double speed;
 private:
     VAO *sea;
+    VAO *wall;
 };
 
 #endif

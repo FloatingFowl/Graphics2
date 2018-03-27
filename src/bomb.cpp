@@ -32,9 +32,11 @@ void Bomb::tick() {
         shot = false;
 }
 
-void Bomb::start(float x, float y, float z, float rot){
+void Bomb::start(float x, float y, float z, float rot, bool booster){
     shot = true;
     yspeed = 16.0f;
+    if(booster)
+        xspeed *= 4;
     xspeed = 16.0f;
     rotation = rot;
     position.x = x + 4.5 * sin(rotation * M_PI / 180.0), position.z = z + 4.5 * cos(rotation * M_PI/180.0), position.y = y + 1.5f;

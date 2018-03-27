@@ -34,6 +34,9 @@ void keyboard(GLFWwindow *window, int key, int scancode, int action, int mods);
 void keyboardChar(GLFWwindow *window, unsigned int key);
 void mouseButton(GLFWwindow *window, int button, int action, int mods);
 void scroll_callback(GLFWwindow *window, double xoffset, double yoffset);
+extern float camera_zoom, camera_look_x, camera_look_y;
+void tick_input(GLFWwindow* window);
+extern int prev_xpos, prev_ypos;
 
 // other_handlers.cpp
 void error_callback(int error, const char *description);
@@ -82,6 +85,7 @@ void camera_func();
 bool ccBoxBox(float ax, float ay, float az, float ahx, float ahy, float ahz, 
         float bx, float by, float bz, float bhx, float bhy, float bhz);
 float ccPolyPoly(std::vector<std::pair<float,float> >& a, std::vector<std::pair<float,float> >& b);
+void changeOrthoPersp();
 
 // ---- Colors ----
 extern const color_t COLOR_RED;
